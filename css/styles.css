@@ -19,6 +19,7 @@ body {
 }
 .card {
   background-color: var(--cardBackground);
+  border-radius: 10px;
 }
 .card-content {
   align-items: center;
@@ -68,6 +69,7 @@ picture {
   height: 100%;
   background-color: hsl(277, 100%, 30%);
   filter: brightness(0.7);
+  border-radius:0 10px 10px 0;
 }
 .image {
   width: 100%;
@@ -75,6 +77,7 @@ picture {
   min-width: 250px;
   z-index: 100;
   opacity: 0.5;
+  border-radius:0 10px 10px 0;
 }
 .attribution {
   color: var(--mainHeading);
@@ -83,8 +86,12 @@ picture {
 }
 
 @media only screen and (max-width: 780px) {
+    picture{
+        border-radius: 10px 10px 0 0;
+    }
   .image {
     order: 1;
+    border-radius: 10px 10px 0 0;
   }
   .card-content {
     order: 2;
